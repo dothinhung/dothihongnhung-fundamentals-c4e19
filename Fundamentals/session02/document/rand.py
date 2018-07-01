@@ -7,3 +7,4 @@ elif number<60:
     print("I feel OK")
 else:
     print("I'm happy")
+#  xem lại

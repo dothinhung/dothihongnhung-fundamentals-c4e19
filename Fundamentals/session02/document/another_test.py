@@ -8,3 +8,4 @@ elif age < 18:
     print("Teenager")
 else:
     print("Not Baby")
+#  ok hiểu 
