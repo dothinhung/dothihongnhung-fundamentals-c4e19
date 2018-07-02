@@ -1,7 +1,6 @@
-loop = True
 choice = ["C", "R", "U", "D"]
 item = ["T-Shirt", "Sweater"]
-while loop:
+while True:
 
     for (i) in choice:
         n = input("Welcome to our shop, what do you want (C, R, U, D)? : ")
