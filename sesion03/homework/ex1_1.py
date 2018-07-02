@@ -15,24 +15,29 @@ while loop:
         print(*item, sep =", ")
 
     elif choice == "U":
-        pos = int(input("Update position? : "))
-        if pos > len(item):
-            print("Invalid position!!!")
-        else:
-            update_item = input("New item?: ")
-            item[pos - 1] = update_item
-            print("Our items : ", end =" ")
-            print(*item, sep =", ")
+        while True:
+            pos = int(input("Update position? : "))
+            if pos > len(item):
+                print("Invalid position!!!")
+            else:
+                update_item = input("New item?: ")
+                item[pos - 1] = update_item
+                print("Our items : ", end =" ")
+                print(*item, sep =", ")
+                break
+                
 
     elif choice == "D":
-        del_item = int(input("Delete position? : "))
-        if del_item > len(item):
-            print("Invalid position!!!")
-        else:
-            item.pop(del_item -1)
-            print("Our items : ", end =" ")
-            print(*item, sep =", ")
-            
+        while True:
+            del_item = int(input("Delete position? : "))
+            if del_item > len(item):
+                print("Invalid position!!!")
+            else:
+                item.pop(del_item -1)
+                print("Our items : ", end =" ")
+                print(*item, sep =", ")
+                break
+                
     elif choice == "No" or choice == "no":
         loop = False
 
