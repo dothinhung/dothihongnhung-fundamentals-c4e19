@@ -36,12 +36,12 @@ menu = ["Kem", "Xoi", "Pho", "Thit", "Tao pho"]
 menu[1] = "Che"
 print(*menu, sep=", ")
 
-# 1 way
+# 1 way xoa theo item
 # thêm dấu * trước menu là để bỏ []
 menu.remove("Kem")
 print(*menu, sep=", ")
 
-# 2 way
+# 2 way xoas theo index
 del menu[1]
 print(*menu, sep=", ")
 
