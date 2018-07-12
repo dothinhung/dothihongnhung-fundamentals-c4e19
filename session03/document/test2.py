@@ -4,20 +4,21 @@ print(number)
 loop = True
 count = 0
 while loop:
-    gess = int(input("Gess my nunber: "))
+    gess = int(input("Gess my number: "))
     if gess == number :
         print ("bingo")
     elif gess > number:
         print("Too large")
     else:
         print("Too small")
-        break
+    
     count += 1
     if count == 7:
         print("You lose")
 
-        loop = False
+    loop = False
     
 
-    #  xem laij
+    #  trò chơi đoán số
+
     

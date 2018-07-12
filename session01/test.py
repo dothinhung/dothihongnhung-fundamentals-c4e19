@@ -25,4 +25,12 @@ for index1, item1 in enumerate(list):
         item = int(item1) * int(item2)
         if item == 128:
             # print(item1, index1)
-            print("ở vị trí thứ {0} và {1}".format(index1 +1 , index2 + 1))
+            print("tích cặp số bằng 128 ở vị trí thứ {0} và {1}".format(index1 +1 , index2 + 1))
+
+
+
+# bài 1 :
+numb = input("Enter a list of number: ")
+list_numb = numb.split()
+print("Update list of number: ")
+print(*list_numb, sep="\n")

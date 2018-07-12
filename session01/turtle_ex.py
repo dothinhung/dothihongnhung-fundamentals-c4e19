@@ -1,21 +1,17 @@
-from turtle import *
+# import * là lấy tất cả trong turtle nếu cần dùng đến
+from turtle import * 
 
 shape("turtle")
 color("red")
-speed(-1)
+speed(-1) 
+# speed là cắm tốc độ cho con rùa
 
 for i in range(300):
-
-      forward(100)
-      left(90)
-      forward(100)
-      left(90)
-      forward(100)
-      left(90)
-      forward(100)
-      left(90)
+      for j in range(4):
+            forward(100)
+            left(90)
      
-     right(7)
+      right(7)
 
 # # for i in range(100):
 # #      forward(100)

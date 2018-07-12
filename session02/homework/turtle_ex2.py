@@ -35,7 +35,7 @@ from turtle import*
 color("green")
 speed(-1)
 edge = 2
-for i in range(4):
+for i in range(6):
     edge +=1
     for j in range(edge):
         forward(100)
