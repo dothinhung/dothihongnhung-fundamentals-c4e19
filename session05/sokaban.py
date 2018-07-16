@@ -82,5 +82,7 @@ while playing:
         # không đẩy box ra khỏi map và 2 box gần nhau
         # tạo biến đếm nếu biến đếm trong des thì + 1
 
+        
+
 
 
