@@ -1,5 +1,8 @@
 from gmail import GMail, Message
 from random import choice
+import datetime
+
+now = datetime.datetime.now()
 
 gmail = GMail('nhung11296@gmail.com','nambatcohoi')
 
@@ -20,7 +23,19 @@ reasons = ["reason 1", "reason 2", "reason3", "reason 4", "reason 5"]
 # random trong list
 choice(reasons)
 
+now = datetime.datetime.now()
+is_now = now.hour
+print(is_now)
+
 html_to_send = html_content.replace("{{sickness}}",choice(reasons))
 
-msg = Message('123', to = '20130075@student.hust.edu.vn', html=html_to_send)
-gmail.send(msg)
+msg = Message('123', to = 'nhung11296@gmail.com', html=html_to_send)
+# gmail.send(msg)
+loop = True
+while loop:
+    if is_now >= 7 and is_now <= 9:
+        gmail.send(msg)
+    else:
+       loop = False
+
+

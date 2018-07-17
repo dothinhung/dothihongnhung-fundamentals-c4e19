@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+
 import matplotlib
 matplotlib.use("TKAgg")
 from matplotlib import pyplot
